@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+/* Mouse / trackpad only — keeps cursor-driven effects off touch screens. */
+@custom-variant fine (@media (hover: hover) and (pointer: fine));
+/* Short single-column viewports (small phones, landscape): keeps the hero calls to action in the first screen. */
+@custom-variant short (@media (max-height: 720px) and (max-width: 1023px));
+
+@theme {
+  --color-ink: #050505;
+  --color-raise: #0e0e0d;
+  --color-paper: #ece9e1;
+  --color-mute: #98958d;
+  --color-dim: #5f5d58;
+  --color-line: #262624;
+  --color-signal: #d4ff3f;
+
+  --font-sans: var(--font-bricolage), var(--font-arabic), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument), ui-serif, Georgia, serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  color-scheme: dark;
+  --gutter: 1.25rem;
+  --nav-h: 4rem;
+}
+@media (min-width: 768px) {
+  :root {
+    --gutter: 2.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  :root {
+    --gutter: 3.5rem;
+  }
+}
+
+html {
+  background: var(--color-ink);
+  scrollbar-gutter: stable;
+  /* The fixed header is the only thing above content, so anchors land below it. */
+  scroll-padding-top: var(--nav-h);
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+/* A very quiet film grain, static, so the black never reads as flat. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  pointer-events: none;
+  opacity: 0.055;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+::selection {
+  background: var(--color-signal);
+  color: #050505;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-signal);
+  outline-offset: 3px;
+  border-radius: 1px;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+dialog {
+  color: inherit;
+}
+dialog::backdrop {
+  background: rgb(0 0 0 / 0.8);
+}
+
+/* ---------- Shared type + layout primitives ---------- */
+
+.pad-x {
+  padding-inline: var(--gutter);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.display {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: -0.045em;
+  line-height: 0.92;
+}
+
+.serif {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.hair {
+  border-color: var(--color-line);
+}
+
+/* Corner marks — the signature "frame" motif used by hero, stages and contact. */
+.corners {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  --m: 14px;
+  --c: var(--color-paper);
+  background:
+    linear-gradient(var(--c), var(--c)) top left / var(--m) 1px no-repeat,
+    linear-gradient(var(--c), var(--c)) top left / 1px var(--m) no-repeat,
+    linear-gradient(var(--c), var(--c)) top right / var(--m) 1px no-repeat,
+    linear-gradient(var(--c), var(--c)) top right / 1px var(--m) no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom left / var(--m) 1px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom left / 1px var(--m) no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom right / var(--m) 1px no-repeat,
+    linear-gradient(var(--c), var(--c)) bottom right / 1px var(--m) no-repeat;
+}
+
+/* ---------- Motion states ---------- */
+/* Hidden-until-animated styles only exist when JS has confirmed motion is allowed. */
+
+.motion-ok [data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+}
+.motion-ok [data-split] .w > span {
+  transform: translateY(112%);
+}
+.motion-ok [data-hero] {
+  opacity: 0;
+}
+.motion-ok [data-hero-word] {
+  transform: translateY(112%);
+}
+
+/* Safety net: if the motion runtime never starts, nothing stays hidden. */
+@keyframes unhide {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.motion-ok:not(.motion-ready) [data-reveal],
+.motion-ok:not(.motion-ready) [data-hero],
+.motion-ok:not(.motion-ready) [data-hero-word],
+.motion-ok:not(.motion-ready) [data-split] .w > span {
+  animation: unhide 0.01s 3.5s forwards;
+}
+
+.w {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.14em;
+  margin-bottom: -0.14em;
+  padding-right: 0.04em;
+  margin-right: -0.04em;
+}
+.w > span {
+  display: inline-block;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+/* Draggable hero windows */
+@media (hover: hover) and (pointer: fine) {
+  [data-win-inner] {
+    cursor: grab;
+  }
+  [data-win-inner]:active {
+    cursor: grabbing;
+  }
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}

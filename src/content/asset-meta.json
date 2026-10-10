@@ -1,0 +1,273 @@
+{
+  "veilock": {
+    "dashboard": {
+      "w": 1600,
+      "h": 1000,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Veilock/main/docs/screenshots/dashboard.png"
+    },
+    "protect": {
+      "w": 1600,
+      "h": 1000,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Veilock/main/docs/screenshots/protect-file.png"
+    },
+    "vaults": {
+      "w": 1600,
+      "h": 1000,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Veilock/main/docs/screenshots/vaults.png"
+    },
+    "passwords": {
+      "w": 1600,
+      "h": 1000,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Veilock/main/docs/screenshots/passwords.png"
+    },
+    "arabic": {
+      "w": 1600,
+      "h": 1000,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Veilock/main/docs/screenshots/arabic-rtl.png"
+    },
+    "lock": {
+      "w": 1600,
+      "h": 1000,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Veilock/main/docs/screenshots/lock-screen.png"
+    }
+  },
+  "remotex": {
+    "home": {
+      "w": 1600,
+      "h": 1047,
+      "src": "https://raw.githubusercontent.com/salah-alstre/RemoteX/main/docs/images/home-dark.png"
+    },
+    "session": {
+      "w": 1600,
+      "h": 1047,
+      "src": "https://raw.githubusercontent.com/salah-alstre/RemoteX/main/docs/images/session.png"
+    },
+    "transfer": {
+      "w": 1600,
+      "h": 1047,
+      "src": "https://raw.githubusercontent.com/salah-alstre/RemoteX/main/docs/images/file-transfer.png"
+    },
+    "diagnostics": {
+      "w": 1600,
+      "h": 1047,
+      "src": "https://raw.githubusercontent.com/salah-alstre/RemoteX/main/docs/images/diagnostics.png"
+    },
+    "elevated": {
+      "w": 1600,
+      "h": 1047,
+      "src": "https://raw.githubusercontent.com/salah-alstre/RemoteX/main/docs/images/session-elevated.png"
+    }
+  },
+  "rimlight": {
+    "dashboard": {
+      "w": 1440,
+      "h": 1080,
+      "src": "https://raw.githubusercontent.com/salah-alstre/recording-application/main/docs/images/dashboard.png"
+    },
+    "library": {
+      "w": 1440,
+      "h": 740,
+      "src": "https://raw.githubusercontent.com/salah-alstre/recording-application/main/docs/images/library.png"
+    },
+    "overlay": {
+      "w": 996,
+      "h": 1064,
+      "src": "https://raw.githubusercontent.com/salah-alstre/recording-application/main/docs/images/overlay.png"
+    },
+    "diagnostics": {
+      "w": 1440,
+      "h": 1080,
+      "src": "https://raw.githubusercontent.com/salah-alstre/recording-application/main/docs/images/diagnostics.png"
+    }
+  },
+  "namaa": {
+    "home": {
+      "w": 1600,
+      "h": 976,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Namaa/main/docs/screenshots/home.png"
+    },
+    "mathematics": {
+      "w": 1600,
+      "h": 976,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Namaa/main/docs/screenshots/mathematics.png"
+    },
+    "arabic": {
+      "w": 1600,
+      "h": 976,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Namaa/main/docs/screenshots/arabic-home.png"
+    },
+    "progress": {
+      "w": 1600,
+      "h": 976,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Namaa/main/docs/screenshots/progress.png"
+    },
+    "listening": {
+      "w": 1600,
+      "h": 976,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Namaa/main/docs/screenshots/listening.png"
+    }
+  },
+  "folderforge": {
+    "icons": {
+      "w": 1282,
+      "h": 852,
+      "src": "https://raw.githubusercontent.com/salah-alstre/FolderForge/main/docs/screenshots/icons.jpg"
+    },
+    "packs": {
+      "w": 1282,
+      "h": 852,
+      "src": "https://raw.githubusercontent.com/salah-alstre/FolderForge/main/docs/screenshots/icon-packs.jpg"
+    },
+    "developer": {
+      "w": 1282,
+      "h": 852,
+      "src": "https://raw.githubusercontent.com/salah-alstre/FolderForge/main/docs/screenshots/developer.jpg"
+    },
+    "arabic": {
+      "w": 1282,
+      "h": 852,
+      "src": "https://raw.githubusercontent.com/salah-alstre/FolderForge/main/docs/screenshots/arabic.jpg"
+    }
+  },
+  "snapvault": {
+    "dashboard": {
+      "w": 1320,
+      "h": 840,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Screenshot-Manager/main/docs/screenshots/dashboard.png"
+    },
+    "library": {
+      "w": 1320,
+      "h": 840,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Screenshot-Manager/main/docs/screenshots/library.png"
+    },
+    "search": {
+      "w": 1320,
+      "h": 840,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Screenshot-Manager/main/docs/screenshots/ocr-search.png"
+    },
+    "viewer": {
+      "w": 1320,
+      "h": 840,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Screenshot-Manager/main/docs/screenshots/viewer.png"
+    },
+    "arabic": {
+      "w": 1320,
+      "h": 840,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Screenshot-Manager/main/docs/screenshots/arabic-rtl.png"
+    }
+  },
+  "auralis": {
+    "dashboard": {
+      "w": 1320,
+      "h": 840,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Voice-Changer/main/docs/images/dashboard.png"
+    },
+    "mixer": {
+      "w": 1320,
+      "h": 840,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Voice-Changer/main/docs/images/mixer.png"
+    },
+    "voices": {
+      "w": 1320,
+      "h": 840,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Voice-Changer/main/docs/images/voice-changer.png"
+    }
+  },
+  "voice-commander": {
+    "dashboard": {
+      "w": 1104,
+      "h": 701,
+      "src": "https://raw.githubusercontent.com/salah-alstre/voice-control/main/docs/screenshots/dashboard-en.png"
+    },
+    "commands": {
+      "w": 1104,
+      "h": 701,
+      "src": "https://raw.githubusercontent.com/salah-alstre/voice-control/main/docs/screenshots/commands.png"
+    },
+    "workflows": {
+      "w": 1104,
+      "h": 701,
+      "src": "https://raw.githubusercontent.com/salah-alstre/voice-control/main/docs/screenshots/workflows.png"
+    },
+    "arabic": {
+      "w": 1104,
+      "h": 701,
+      "src": "https://raw.githubusercontent.com/salah-alstre/voice-control/main/docs/screenshots/dashboard-ar.png"
+    }
+  },
+  "windows": {
+    "desktop": {
+      "w": 1600,
+      "h": 900,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Windows/main/docs/screenshots/desktop.png"
+    },
+    "multitasking": {
+      "w": 1600,
+      "h": 900,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Windows/main/docs/screenshots/multitasking.png"
+    },
+    "explorer": {
+      "w": 1600,
+      "h": 900,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Windows/main/docs/screenshots/file-explorer.png"
+    },
+    "start": {
+      "w": 1600,
+      "h": 900,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Windows/main/docs/screenshots/start-menu.png"
+    },
+    "settings": {
+      "w": 1600,
+      "h": 900,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Windows/main/docs/screenshots/settings.png"
+    }
+  },
+  "tahadi": {
+    "lobby": {
+      "w": 1600,
+      "h": 1280,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Tahadi/main/public/tahdi1.png"
+    },
+    "home": {
+      "w": 1598,
+      "h": 938,
+      "src": "https://raw.githubusercontent.com/salah-alstre/Tahadi/main/public/tahdi2.png"
+    }
+  },
+  "buildx": {
+    "builder": {
+      "w": 1600,
+      "h": 983,
+      "src": "https://raw.githubusercontent.com/salah-alstre/BuildX/main/public/BuildX2.png"
+    },
+    "compat": {
+      "w": 1600,
+      "h": 1006,
+      "src": "https://raw.githubusercontent.com/salah-alstre/BuildX/main/public/BuildX3.png"
+    }
+  },
+  "stockflow": {
+    "banner": {
+      "w": 1200,
+      "h": 600,
+      "src": "https://raw.githubusercontent.com/salah-alstre/StockFlow/main/public/StockFlow.png"
+    }
+  },
+  "ram-power": {
+    "hero": {
+      "w": 1600,
+      "h": 1000,
+      "src": "https://raw.githubusercontent.com/salah-alstre/RAM-POWER/master/docs/screenshots/hero.jpg"
+    },
+    "gallery": {
+      "w": 1600,
+      "h": 1067,
+      "src": "https://raw.githubusercontent.com/salah-alstre/RAM-POWER/master/docs/screenshots/gallery.jpg"
+    },
+    "fog": {
+      "w": 1600,
+      "h": 893,
+      "src": "https://raw.githubusercontent.com/salah-alstre/RAM-POWER/master/docs/screenshots/cold-can-fog.jpg"
+    }
+  }
+}
